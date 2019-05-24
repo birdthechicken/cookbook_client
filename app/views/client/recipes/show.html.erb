@@ -14,7 +14,11 @@
     <li><%= directions %></li>
   <% end %>
 </ol>
+<div>
+  <a href="/client/recipes/<%= @recipe['id'] %>/edit">Edit</a>
+  <a href="/client/recipes/<%= @recipe['id'] %>" data-method="delete">Delete</a>
+</div>
 
 <img src="<%= @recipe["image_url"] %>" alt="<%= @recipe["title"] %>">
 
-<a href="/client/recipes">Home</a>
+
